@@ -24,6 +24,7 @@ jobs:
 
       - name: Run creation script
         env:
+          OCI_SHAPE: "VM.Standard.A1.Flex"
           OCI_REGION: ${{ secrets.OCI_REGION }}
           OCI_USER_ID: ${{ secrets.OCI_USER_ID }}
           OCI_TENANCY_ID: ${{ secrets.OCI_TENANCY_ID }}
